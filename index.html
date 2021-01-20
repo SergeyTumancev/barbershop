@@ -113,62 +113,63 @@
 							<label for="appointment-phone">Телефон</label>
 							<input id="appointment-phone" type="tel" name="phone" value="" placeholder="+7 123 456-78-90">
 						</p>
-						<button type="submit">Отправить</button>
+						<button class="button" type="submit">Отправить</button>
 					</form>
 				</section>
 			</div>
 			</main>
-			<footer>
-			<p>
+			<footer class="main-footer">
+			<p class="footer-contacts">
 			Барбершоп "Бородинский"<br>
 			адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
 			Телефон: +7 (495) 666-02-66
 			</p>
-			<div>
+			<div class="footer-social">
 				<p>Давайте дружить</p>
 				<ul>
-					<li><a href="#">Вконтакте</a></li>
-					<li><a href="#">Фейсбук</a></li>
-					<li><a href="#">Инстаграмм</a></li>
+					<li><a class="social-button" href="#">Вконтакте</a></li>
+					<li><a class="social-button" href="#">Фейсбук</a></li>
+					<li><a class="social-button" href="#">Инстаграмм</a></li>
 				</ul>
 			</div>
-			<p>
-				Разработано
-				<a href="https://htmlacademy.ru">HTML Academy</a>
+			<p class="footer-copyright">
+				<b>Разработано</b>
+				<a class="button" href="https://htmlacademy.ru">HTML Academy</a>
 			</p>
 		</footer>
 
-		<section>
+		<section class="modal modal-login">
 			<h2>Личный кабинет</h2>
 			<p>Введите свой логин и пароль.</p>
-			<form action="https://echo.htmlacademy.ru" method="post">
+			<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
 				<p>
-					<label for="user-login">Логин</label>
-					<input id="user-login" type="email" name="login" placeholder="email@example.com">
+					<label class="visually-hidden" for="user-login">Логин</label>
+					<input class="login-icon-user" id="user-login" type="email" name="login" placeholder="email@example.com">
 				</p>
 				<p>
-					<label for="user-password">Пароль</label>
-					<input id="user-password" type="password" name="password" placeholder="********">
+					<label class="visually-hidden" for="user-password">Пароль</label>
+					<input class="login-icon-password" id="user-password" type="password" name="password" placeholder="********">
 				</p>
-				<p>
+				<p class="login-password-info">
 					<input type="checkbox" name="remember" id="login-password-info">
-					<label for="login-password-info">
+					<label class="login-checkbox" for="login-password-info">
+					<span class="checkbox-indicator"></span>
 					Запомните меня
 					</label>
-					<a href="#">Я забыл пароль!</a>
+					<a class="restore" href="#">Я забыл пароль!</a>
 				</p>
-				<button type="submit">Войти</button>
+				<button class="button" type="submit">Войти</button>
 			</form>	
-			<button type="button">Закрыть</button>
+			<button class="modal-close" type="button">Закрыть</button>
 		</section>
 
-		<section>
-			<h2>Как до нас добраться</h2>
+		<section class="modal modal-map">
+			<h2 class="visually-hidden">Как до нас добраться</h2>
 			<p>
 				<img src="img/map.png" width="780" height="" alt="Офис 
 				компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
 			</p>
-			<button type="button">Закрыть</button>
+			<button class="modal-close" type="button">Закрыть</button>
 		</section>
 	</body>
 </html>
